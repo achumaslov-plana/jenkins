@@ -5,7 +5,9 @@ pipeline {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
             steps {
-                app = docker.build("chymaslik/hellonode")
+                script {
+                    dockerImage = docker.build chymaslik/hellonode:latest
+                }
             }
         }
     }
