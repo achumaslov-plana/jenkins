@@ -1,5 +1,5 @@
 {
-  "name": "releaseworks-hellonode",
+  "name": "chymaslik-jenkins-test",
   "version": "1.0.0",
   "description": "A Hello World HTTP server",
   "main": "main.js",
@@ -9,14 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/releaseworks/hellonode/"
+    "url": "https://github.com/achumaslov-plana/jenkins"
   },
   "keywords": [
     "node",
     "docker",
     "dockerfile"
   ],
-  "author": "academy@release.works",
-  "license": "ISC",
+  "author": "chymaslik",
   "devDependencies": { "test": ">=0.6.0" }
 }
