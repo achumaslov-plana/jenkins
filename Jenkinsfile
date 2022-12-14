@@ -7,7 +7,7 @@ pipeline {
          * docker build on the command line */
             steps {
                 script {
-                    bat 'ping 8.8.8.8 -n 2'
+                    bat 'docker build -t chymaslik/node:test .'
                 }
             }
         }
