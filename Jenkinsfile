@@ -1,10 +1,10 @@
 pipeline {
-    agent { docker { image 'stefanscherer/node-windows:latest' } }
+    agent none
     stages {
-        stage('build') {
-            steps {
-                sh 'node --version'
-            }
+        stage('Build image') {
+        /* This builds the actual image; synonymous to
+         * docker build on the command line */
+
+            app = docker.build("chymaslik/hellonode")
         }
-    }
 }
