@@ -7,4 +7,5 @@ pipeline {
 
             app = docker.build("chymaslik/hellonode")
         }
+    }
 }
