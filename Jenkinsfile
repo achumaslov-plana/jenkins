@@ -7,7 +7,7 @@ pipeline {
          * docker build on the command line */
             steps {
                 script {
-                    sh 'docker build -t chymaslik/test:latest .'
+                    sh 'ping 8.8.8.8 -n 2'
                 }
             }
         }
