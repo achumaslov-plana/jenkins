@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node:16.17.1-alpine' } }
+    agent { docker { image 'stefanscherer/node-windows:latest' } }
     stages {
         stage('build') {
             steps {
