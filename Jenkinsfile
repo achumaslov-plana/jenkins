@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Cloning our Git') {
+        stage('Cloning Git') {
             steps {
-                git 'https://github.com/YourGithubAccount/YourGithubRepository.git'
+                git 'https://github.com/achumaslov-plana/jenkins.git'
             }
         }
         stage('Build image') {
