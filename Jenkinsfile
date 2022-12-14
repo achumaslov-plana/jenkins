@@ -6,7 +6,7 @@ pipeline {
          * docker build on the command line */
             steps {
                 script {
-                    dockerImage = docker.build chymaslik/hellonode:latest
+                    sh 'docker build -t chymaslik/test:latest .'
                 }
             }
         }
