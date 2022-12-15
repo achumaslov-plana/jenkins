@@ -12,7 +12,8 @@ pipeline {
         stage('Deploy image') {
             steps {
                 script {
-                    powershell 'kubectl apply -f nodeapp.yaml'
+                    powershell '''kubectl delete -f nodeapp.yaml
+                    kubectl apply -f nodeapp.yaml'''
                 }
             }
         }
