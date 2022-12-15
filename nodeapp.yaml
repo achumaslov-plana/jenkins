@@ -16,7 +16,7 @@ spec:
       containers:
       - name: nodeapp
         image: chymaslik/node:test
-        imagePullPolicy: Never
+        imagePullPolicy: Always
 ---
 apiVersion: v1
 kind: Service
