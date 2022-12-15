@@ -5,7 +5,7 @@ pipeline {
         stage('Build image') {
             steps {
                 script {
-                    powershell 'docker build -t chymaslik/node:test .'
+                    powershell 'docker build --no-cache -t chymaslik/node:test .'
                 }
             }
         }
